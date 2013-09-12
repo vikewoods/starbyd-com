@@ -282,3 +282,17 @@ table {
 #footer{
   height: 400px;
 }
+
+// Branded selection
+::selection{
+  color: #d3dce3;
+  background: #005bab;
+  text-decoration: none;
+  text-shadow: none;
+}
+::-moz-selection{
+  color: #d3dce3;
+  background: #005bab;
+  text-decoration: none;
+  text-shadow: none;
+}

@@ -11,9 +11,9 @@
   @media (min-width: 1620px) {
 	width: 1620px;
   }
-  @media (min-width: 1920px) {
-	width: 1920px;
-  }
+  //@media (min-width: 1920px) {
+	//width: 1920px;
+  //}
 }
 
 @mixin grid-item{
@@ -33,7 +33,7 @@
 }
 
 @mixin grid-1 {
-  width:140px;
+  width:60px;
   @media (min-width: 1200px) {
 	width: 80px;
   }
@@ -43,13 +43,13 @@
   @media (min-width: 1620px) {
 	width: 115px;
   }
-  @media (min-width: 1920px) {
-	width: 140px;
-  }
+  //@media (min-width: 1920px) {
+	//width: 140px;
+  //}
 }
 
 @mixin grid-2 {
-  width:300px;
+  width:140px;
   @media (min-width: 1200px) {
 	width: 180px;
   }
@@ -59,9 +59,9 @@
   @media (min-width: 1620px) {
 	width: 250px;
   }
-  @media (min-width: 1920px) {
-	width: 300px;
-  }
+  //@media (min-width: 1920px) {
+	//width: 300px;
+  //}
 }
 
 @mixin grid-3 {
@@ -75,9 +75,9 @@
   @media (min-width: 1620px) {
 	width: 385px;
   }
-  @media (min-width: 1920px) {
-	width: 460px;
-  }
+  //@media (min-width: 1920px) {
+	//width: 460px;
+  //}
 }
 
 @mixin grid-4 {
@@ -91,9 +91,9 @@
   @media (min-width: 1620px) {
 	width: 520px;
   }
-  @media (min-width: 1920px) {
-	width: 620px;
-  }
+  //@media (min-width: 1920px) {
+	//width: 620px;
+  //}
 }
 
 @mixin grid-5 {
@@ -107,9 +107,9 @@
   @media (min-width: 1620px) {
 	width: 655px;
   }
-  @media (min-width: 1920px) {
-	width: 780px;
-  }
+  //@media (min-width: 1920px) {
+	//width: 780px;
+  //}
 }
 
 @mixin grid-6 {
@@ -123,9 +123,9 @@
   @media (min-width: 1620px) {
 	width: 790px;
   }
-  @media (min-width: 1920px) {
-	width: 940px;
-  }
+  //@media (min-width: 1920px) {
+	//width: 940px;
+  //}
 }
 
 @mixin grid-7 {
@@ -139,9 +139,9 @@
   @media (min-width: 1620px) {
 	width: 925px;
   }
-  @media (min-width: 1920px) {
-	width: 1100px;
-  }
+  //@media (min-width: 1920px) {
+	//width: 1100px;
+  //}
 }
 
 @mixin grid-8 {
@@ -155,9 +155,9 @@
   @media (min-width: 1620px) {
 	width: 1060px;
   }
-  @media (min-width: 1920px) {
-	width: 1260px;
-  }
+  //@media (min-width: 1920px) {
+	//width: 1260px;
+  //}
 }
 
 @mixin grid-9 {
@@ -171,9 +171,9 @@
   @media (min-width: 1620px) {
 	width: 1195px;
   }
-  @media (min-width: 1920px) {
-	width: 1420px;
-  }
+  //@media (min-width: 1920px) {
+	//width: 1420px;
+  //}
 }
 
 @mixin grid-10 {
@@ -187,9 +187,9 @@
   @media (min-width: 1620px) {
 	width: 1330px;
   }
-  @media (min-width: 1920px) {
-	width: 1580px;
-  }
+  //@media (min-width: 1920px) {
+	//width: 1580px;
+  //}
 }
 
 @mixin grid-11 {
@@ -203,9 +203,9 @@
   @media (min-width: 1620px) {
 	width: 1465px;
   }
-  @media (min-width: 1920px) {
-	width: 1740px;
-  }
+  //@media (min-width: 1920px) {
+	//width: 1740px;
+  //}
 }
 
 @mixin grid-12 {
@@ -219,7 +219,7 @@
   @media (min-width: 1620px) {
 	width: 1600px;
   }
-  @media (min-width: 1920px) {
-	width: 1900px;
-  }
+  //@media (min-width: 1920px) {
+	//width: 1900px;
+  //}
 }

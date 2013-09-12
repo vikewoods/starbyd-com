@@ -17,18 +17,33 @@
 	width: 1440px;
   }
   @media (min-width: 1620px) {
-	width: 1620px;
+	width: 1680px;
   }
-  @media (min-width: 1920px) {
-	width: 1980px;
-  }
+  //@media (min-width: 1920px) {
+	//width: 1980px;
+  //}
 }
 
-// Branded selection
-::selection,
-::-moz-selection{
-  color: #005bab;
-  background: #d3dce3;
-  text-decoration: none;
-  text-shadow: none;
+@mixin icon-sprite{
+  display: inline-block;
+  width: 44px;
+  height: 45px;
+  line-height: 45px;
+  vertical-align: text-top;
+  background-image: url("../images/menu-item-sprites.png");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+@mixin icon-init{
+  margin-left: -60px;
+  margin-right: 15px;
+  position: relative;
+}
+
+// Fonts
+h2{
+  font-size: 2.2em;
+  line-height: 2.2em;
+  letter-spacing: -1px;
 }
