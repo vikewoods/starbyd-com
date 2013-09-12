@@ -540,7 +540,6 @@ body{
   @extend .clearfix;
   @include container;
   background-color: #ffffff;
-  height: 600px;
   -webkit-box-shadow: 1px -1px 0px 4px rgba(0,0,0,0.2);
   -moz-box-shadow: 1px -1px 0px 4px rgba(0,0,0,0.2);
   box-shadow: 1px -1px 0px 4px rgba(0,0,0,0.2);
@@ -611,6 +610,75 @@ body{
 	  @include animated-links;
 	  &:hover{
 		border-bottom: 1px solid rgba(16, 57, 92, 1);
+	  }
+	}
+  }
+
+  #catalog-section{
+	background: #f0f0f0;
+	@extend .clearfix;
+	.catalog-item{
+	  @include grid-item;
+	  @include grid-4;
+	  padding-top: 2em;
+	  padding-bottom: 2em;
+	  .title{
+		line-height: 55px;
+		height: 55px;
+		-moz-box-shadow: 2px 4px 0 rgba(0,1,1,.15);
+		-webkit-box-shadow: 2px 4px 0 rgba(0,1,1,.15);
+		box-shadow: 2px 4px 0 rgba(0,1,1,.15);
+		background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNWFhYSIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwNDY4MyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+);
+		background-image: -moz-linear-gradient(bottom, #005aaa 0%, #004683 100%);
+		background-image: -o-linear-gradient(bottom, #005aaa 0%, #004683 100%);
+		background-image: -webkit-linear-gradient(bottom, #005aaa 0%, #004683 100%);
+		background-image: linear-gradient(bottom, #005aaa 0%, #004683 100%);
+
+		width: 90%;
+
+		font-weight: 400;
+		font-size: 2em;
+		letter-spacing: -1px;
+		color: #ffffff;
+		i{
+		  @include icon-sprite;
+		  vertical-align: middle;
+		  margin-right: 20px;
+		  margin-left: 10px;
+		}
+		.dveri{
+		  background-position: 0px 0px;
+		}
+		.pidloga{
+		  background-position: -53px 0px;
+		}
+		.suptni{
+		  background-position: 0px 0px;
+		}
+		.inter{
+		  background-position: -97px 0px;
+		}
+		.exster{
+		  background-position: -144px 0px;
+		}
+
+	  }
+	  ul{
+		margin-top: 20px;
+		margin-left: 70px;
+		li{
+		  a{
+			text-decoration: none;
+			font-size: 1.2em;
+			font-weight: 300;
+			color: #004684;
+			border-bottom: 1px solid rgba(0, 70, 132, 0);
+			@include animated-links;
+			&:hover{
+			  border-bottom: 1px solid rgba(0, 70, 132, 1);
+			}
+		  }
+		}
 	  }
 	}
   }
