@@ -100,4 +100,12 @@ $(document).ready(function(){
 	// Kick off one resize to fix all videos on page load
 	}).resize();
 
+	/*
+	Initializ Hammer JS for mobile devices
+	 */
+
+	$('html').hammer().on("swipeleft", "body", function(event) {
+		alert('Open an menu! Mate!')
+	});
+
 });
