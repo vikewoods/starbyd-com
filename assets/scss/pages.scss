@@ -63,6 +63,55 @@ body{
 			font-size: 1em;
 			letter-spacing: -1px;
 		  }
+			.social{
+				display: inline-block;
+				width: 45px;
+				height: 22px;
+				line-height: 22px;
+				vertical-align: text-top;
+				background-image: url("../images/icons-sprites.png");
+				background-position: 0px -204px;
+				background-repeat: no-repeat;
+
+				margin-right: 10px;
+			}
+			.facebook{
+
+			}
+			.vkontakte{
+				background-position: -50px -204px;
+			}
+			.twitter{
+				background-position: -98px -204px;
+			}
+			.google{
+				background-position: -148px -204px;
+				margin-right: 40px;
+			}
+			.ua{
+				display: inline-block;
+				width: 45px;
+				height: 22px;
+				line-height: 22px;
+				vertical-align: text-top;
+				background-image: url("../images/icons-sprites.png");
+				background-repeat: no-repeat;
+
+				margin-right: 10px;
+				background-position: -190px -204px;
+			}
+			.eng{
+				display: inline-block;
+				width: 45px;
+				height: 22px;
+				line-height: 22px;
+				vertical-align: text-top;
+				background-image: url("../images/icons-sprites.png");
+				background-repeat: no-repeat;
+
+				margin-right: 10px;
+				background-position: -230px -204px;
+			}
 		}
 	}
 	.second-section{
