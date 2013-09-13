@@ -34,7 +34,8 @@ $(document).ready(function(){
 
 		setTimeout(function(){
 			if(full_out){
-				$menu.fadeOut('fast', function(){displayed = false;$li.removeClass('active-li');});
+				$menu.fadeOut('fast', function(){displayed = false;});
+				$li.removeClass('active-li');
 			}
 		},150);
 		full_out = true;
