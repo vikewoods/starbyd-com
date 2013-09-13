@@ -530,7 +530,7 @@ body{
 		.ff-s-3{
 			@include grid-item;
 			margin-top: 36px;
-			width: 35%;
+			width: 40%;
 			p{
 				font-weight: 400;
 				color: #898989;
@@ -811,6 +811,9 @@ body{
 
   .content{
 		width: 45%;
+		@media (min-width: 1440px){
+			width: 48%;
+		}
 		margin: 0 auto;
 		@extend .clearfix;
 
@@ -885,6 +888,9 @@ body{
 			padding-left: 40px;
 			position: relative;
 			left: -30px;
+			@media (min-width: 1440px){
+				left: -20px;
+			}
 		}
 		.news-holder{
 			padding: 1em 0 2.5em 0;
@@ -946,6 +952,9 @@ body{
 			position: relative;
 			right: -50px;
 			float: right;
+			@media (min-width: 1440px){
+				right: -40px;
+			}
 		}
 		.video-big{
 			padding: 1em 0;
@@ -953,17 +962,33 @@ body{
 			width: 90%;
 			height: 100%;
 			float: right;
+			@media (min-width: 1440px){
+				iframe{
+					width: 520px !important;
+				}
+			}
 		}
 		.video-small{
 			float: right;
 			width: 40%;
 			margin-left: 5%;
+
 		}
 		.v1{
-			padding-left: 35px;
+			padding-left: 38px;
+			@media (min-width: 1440px){
+				iframe{
+					width: 222px !important;
+				}
+			}
 		}
 		.v2{
-			padding-left: 50px;
+			padding-left: 54px;
+			@media (min-width: 1440px){
+				iframe{
+					width: 222px !important;
+				}
+			}
 		}
 	}
 	padding-bottom: 200px;
@@ -1028,6 +1053,10 @@ body{
 		padding-left: 40px;
 		position: relative;
 		left: -30px;
+		@media (min-width: 1440px){
+			left: -20px;
+		}
+
 	}
 
 	.ah-l{
