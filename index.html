@@ -3,11 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Страбуд - Главная страница</title>
-	<script src="bower_components/jquery/jquery.min.js"></script>
-	<script src="bower_components/jquery/jquery-migrate.min.js"></script>
-	<script src="bower_components/hammerjs/dist/jquery.hammer.min.js"></script>
-	<script src="assets/js/detectmobilebrowser.js"></script>
-	<script src="assets/js/applications.js"></script>
+	<script src="bower_components/headjs/dist/head.js"></script>
+	<script>
+		head.js("bower_components/jquery/jquery.min.js", "bower_components/jquery/jquery-migrate.min.js", "bower_components/modernizr/modernizr.js", "bower_components/hammerjs/dist/jquery.hammer.min.js", "assets/js/detectmobilebrowser.js", "assets/js/applications.js", function(){
+
+		});
+	</script>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/scss/output.css"/>
 </head>

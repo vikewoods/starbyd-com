@@ -1,0 +1,14 @@
+{
+  "name": "headjs",
+  "homepage": "https://github.com/headjs/headjs",
+  "_release": "master",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "e4eaf90fb74a965ad85de513c2ab2ea45d93350a"
+  },
+  "_source": "git://github.com/headjs/headjs.git",
+  "_target": "*",
+  "_originalSource": "headjs",
+  "_direct": true
+}
