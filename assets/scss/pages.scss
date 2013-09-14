@@ -16,6 +16,9 @@ body{
 		  	@include grid-item;
 		  	@include grid-3;
 		  	@include alpha;
+				@media (min-width: 1200px) {
+					width: 210px;
+				}
 				@media (min-width: 1440px) {
 					width: 210px;
 				}
@@ -60,6 +63,10 @@ body{
 		  @include grid-4;
 		  height: 50px;
 		  line-height: 50px;
+			@media (min-width: 1200px) {
+				margin-left: 80px;
+				margin-right: 0;
+			}
 			@media (min-width: 1440px) {
 				margin-left: 80px;
 				margin-right: 0;
@@ -153,6 +160,9 @@ body{
 		  	@include grid-item;
 		  	@include grid-9;
 		  	@include omega;
+				@media (min-width: 1200px) {
+					margin-left: 70px;
+				}
 				@media (min-width: 1440px) {
 					margin-left: 70px;
 				}
@@ -169,6 +179,9 @@ body{
 				float: left;
 			  margin: 0 0em;
 			  padding: 0 3.25em;
+				@media (min-width: 1200px) {
+					padding: 0 2.5em;
+				}
 				@media (min-width: 1440px) {
 					padding: 0 2.65em;
 				}
@@ -866,6 +879,9 @@ body{
 
   .content{
 		width: 45%;
+		@media (min-width: 1200px) {
+			width: 58%;
+		}
 		@media (min-width: 1440px){
 			width: 48%;
 		}
@@ -1018,7 +1034,9 @@ body{
 			height: 100%;
 			float: right;
 			@media (min-width: 1200px) {
-				
+				iframe{
+					width: 435px !important;
+				}
 			}
 			@media (min-width: 1440px){
 				iframe{
@@ -1034,6 +1052,12 @@ body{
 		}
 		.v1{
 			padding-left: 38px;
+			@media (min-width: 1200px){
+				padding-left: 36px;
+				iframe{
+					width: 200px !important;
+				}
+			}
 			@media (min-width: 1440px){
 				padding-left: 36px;
 				iframe{
@@ -1043,6 +1067,12 @@ body{
 		}
 		.v2{
 			padding-left: 54px;
+			@media (min-width: 1200px){
+				padding-left: 60px;
+				iframe{
+					width: 200px !important;
+				}
+			}
 			@media (min-width: 1440px){
 				padding-left: 60px;
 				iframe{
