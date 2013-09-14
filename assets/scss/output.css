@@ -390,6 +390,20 @@ body { background: url("../images/bg.jpg") repeat; min-width: 960px; font-family
 #latest-aricles .articles-holder .descr p { color: #666666; margin-bottom: 0.5em; }
 #latest-aricles .articles-holder .descr .read { display: inline-block; width: 45px; height: 45px; line-height: 45px; vertical-align: middle; background-image: url("../images/icons-sprites.png"); background-position: -221px -59px; background-repeat: no-repeat; float: right; }
 
+#geek-menu { padding-bottom: 0.5em; padding-top: 0.5em; padding-right: 2em; padding-left: 2em; position: absolute; z-index: 10000; background: rgba(0, 0, 0, 0.68); }
+#geek-menu ul { list-style: none; margin-bottom: 1em; color: #ffffff; }
+#geek-menu ul li { margin-left: 0.5em; }
+#geek-menu ul li ul { font-weight: 400; font-style: italic; }
+#geek-menu ul li ul i { display: inline-block; width: 44px; height: 45px; line-height: 45px; vertical-align: text-top; background-image: url("../images/menu-item-sprites.png"); background-position: 0px 0px; background-repeat: no-repeat; }
+#geek-menu ul li ul .dveri { margin-left: -60px; margin-right: 15px; position: relative; background-position: 0px 0px; }
+#geek-menu ul li ul .pidloga { margin-left: -60px; margin-right: 15px; position: relative; background-position: -53px 0px; }
+#geek-menu ul li ul .suptni { margin-left: -60px; margin-right: 15px; position: relative; background-position: 0px 0px; }
+#geek-menu ul li ul .inter { margin-left: -60px; margin-right: 15px; position: relative; background-position: -97px 0px; }
+#geek-menu ul li ul .exster { margin-left: -60px; margin-right: 15px; position: relative; background-position: -144px 0px; }
+#geek-menu ul li ul li { font-style: normal; }
+#geek-menu ul li ul li a { font-weight: 300; }
+#geek-menu ul li a { color: #ffffff; font-weight: 600; }
+
 @media (min-width: 1200px) { body { min-width: 1200px; } }
 @media (min-width: 1440px) { body { min-width: 1440px; } }
 @media (min-width: 1620px) { body { min-width: 1620px; } }

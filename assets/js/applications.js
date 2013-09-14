@@ -9,6 +9,13 @@ $(document).ready(function(){
 	var $li = $("#catalog-menu");
 	var $menu = $("#catalog-sub-menu");
 
+	// Hammer (tap mobile devices)
+	$li.hammer().on("tap", $menu, function(event) {
+		event.preventDefault();
+		$menu.show();
+		alert('Tapped!')
+	});
+
 	/*$li.hover(
 		function(){
 			$menu.fadeIn('slow', function() {

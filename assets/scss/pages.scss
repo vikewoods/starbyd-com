@@ -1158,3 +1158,60 @@ body{
 		}
 	}
 }
+
+
+#geek-menu{
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	padding-right: 2em;
+	padding-left: 2em;
+	position: absolute;
+	z-index: 10000;
+	background: rgba(0, 0, 0, 0.68);
+	ul{
+		list-style: none;
+		margin-bottom: 1em;
+		color: #ffffff;
+		li{
+
+			ul{
+				font-weight: 400;
+				font-style: italic;
+				i{
+					@include icon-sprite;
+				}
+				.dveri{
+					@include icon-init;
+					background-position: 0px 0px;
+				}
+				.pidloga{
+					@include icon-init;
+					background-position: -53px 0px;
+				}
+				.suptni{
+					@include icon-init;
+					background-position: 0px 0px;
+				}
+				.inter{
+					@include icon-init;
+					background-position: -97px 0px;
+				}
+				.exster{
+					@include icon-init;
+					background-position: -144px 0px;
+				}
+				li{
+					font-style: normal;
+					a{
+						font-weight: 300;
+					}
+				}
+			}
+			margin-left: 0.5em;
+			a{
+				color: #ffffff;
+				font-weight: 600;
+			}
+		}
+	}
+}
