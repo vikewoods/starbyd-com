@@ -4,26 +4,20 @@
 
 $(document).ready(function(){
 
+	/*
+	Parallax banner
+	 */
+	$('#da-slider').cslider({
+		current     : 0,
+		bgincrement : 50,
+		autoplay    : false,
+		interval    : 4000
+	});
+
 	// init menu 
 	(function($){
 	var $li = $("#catalog-menu");
 	var $menu = $("#catalog-sub-menu");
-
-	// Hammer (tap mobile devices)
-	//$li.hammer().on("tap", $menu, function(event) {
-	//	event.preventDefault();
-	//	$menu.show();
-	//	alert('Tapped!')
-	//});
-
-	/*$li.hover(
-		function(){
-			$menu.fadeIn('slow', function() {
-				$li.addClass('active-li');
-			});
-		}
-	);*/
-
 
 
 	full_out = false;
