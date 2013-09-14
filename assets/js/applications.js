@@ -10,11 +10,11 @@ $(document).ready(function(){
 	var $menu = $("#catalog-sub-menu");
 
 	// Hammer (tap mobile devices)
-	$li.hammer().on("tap", $menu, function(event) {
-		event.preventDefault();
-		$menu.show();
-		alert('Tapped!')
-	});
+	//$li.hammer().on("tap", $menu, function(event) {
+	//	event.preventDefault();
+	//	$menu.show();
+	//	alert('Tapped!')
+	//});
 
 	/*$li.hover(
 		function(){
@@ -110,9 +110,5 @@ $(document).ready(function(){
 	/*
 	Initializ Hammer JS for mobile devices
 	 */
-
-	$('html').hammer().on("swipeleft", "body", function(event) {
-		alert('Open an menu! Mate!')
-	});
 
 });
