@@ -1,225 +1,225 @@
 @mixin container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 960px;
-  @media (min-width: 1200px) {
-	width: 1200px;
-  }
-  @media (min-width: 1440px) {
-	width: 1440px;
-  }
-  @media (min-width: 1620px) {
-	width: 1620px;
-  }
-  //@media (min-width: 1920px) {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	@media (min-width: 1200px) {
+		width: 1200px;
+	}
+	@media (min-width: 1440px) {
+		width: 1200px;
+	}
+	@media (min-width: 1620px) {
+		width: 1416px;
+	}
+	//@media (min-width: 1920px) {
 	//width: 1920px;
-  //}
+	//}
 }
 
-@mixin grid-item{
-  display:inline;
-  float: left;
-  position: relative;
-  margin-left: 10px;
-  margin-right: 10px;
+@mixin grid-item {
+	display: inline;
+	float: left;
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 @mixin alpha {
-  margin-left: 0;
+	margin-left: 0;
 }
 
 @mixin omega {
-  margin-right: 0;
+	margin-right: 0;
 }
 
 @mixin grid-1 {
-  width:60px;
-  @media (min-width: 1200px) {
-	width: 80px;
-  }
-  @media (min-width: 1440px) {
-	width: 100px;
-  }
-  @media (min-width: 1620px) {
-	width: 115px;
-  }
-  //@media (min-width: 1920px) {
+	width: 60px;
+	@media (min-width: 1200px) {
+		width: 80px;
+	}
+	@media (min-width: 1440px) {
+		width: 80px;
+	}
+	@media (min-width: 1620px) {
+		width: 98px;
+	}
+	//@media (min-width: 1920px) {
 	//width: 140px;
-  //}
+	//}
 }
 
 @mixin grid-2 {
-  width:140px;
-  @media (min-width: 1200px) {
-	width: 180px;
-  }
-  @media (min-width: 1440px) {
-	width: 220px;
-  }
-  @media (min-width: 1620px) {
-	width: 250px;
-  }
-  //@media (min-width: 1920px) {
+	width: 140px;
+	@media (min-width: 1200px) {
+		width: 180px;
+	}
+	@media (min-width: 1440px) {
+		width: 180px;
+	}
+	@media (min-width: 1620px) {
+		width: 216px;
+	}
+	//@media (min-width: 1920px) {
 	//width: 300px;
-  //}
+	//}
 }
 
 @mixin grid-3 {
-  width:460px;
-  @media (min-width: 1200px) {
-	width: 280px;
-  }
-  @media (min-width: 1440px) {
-	width: 340px;
-  }
-  @media (min-width: 1620px) {
-	width: 385px;
-  }
-  //@media (min-width: 1920px) {
+	width: 460px;
+	@media (min-width: 1200px) {
+		width: 280px;
+	}
+	@media (min-width: 1440px) {
+		width: 280px;
+	}
+	@media (min-width: 1620px) {
+		width: 334px;
+	}
+	//@media (min-width: 1920px) {
 	//width: 460px;
-  //}
+	//}
 }
 
 @mixin grid-4 {
-  width:620px;
-  @media (min-width: 1200px) {
-	width: 380px;
-  }
-  @media (min-width: 1440px) {
-	width: 460px;
-  }
-  @media (min-width: 1620px) {
-	width: 520px;
-  }
-  //@media (min-width: 1920px) {
+	width: 620px;
+	@media (min-width: 1200px) {
+		width: 380px;
+	}
+	@media (min-width: 1440px) {
+		width: 380px;
+	}
+	@media (min-width: 1620px) {
+		width: 452px;
+	}
+	//@media (min-width: 1920px) {
 	//width: 620px;
-  //}
+	//}
 }
 
 @mixin grid-5 {
-  width:780px;
-  @media (min-width: 1200px) {
-	width: 480px;
-  }
-  @media (min-width: 1440px) {
-	width: 580px;
-  }
-  @media (min-width: 1620px) {
-	width: 655px;
-  }
-  //@media (min-width: 1920px) {
+	width: 780px;
+	@media (min-width: 1200px) {
+		width: 480px;
+	}
+	@media (min-width: 1440px) {
+		width: 480px;
+	}
+	@media (min-width: 1620px) {
+		width: 570px;
+	}
+	//@media (min-width: 1920px) {
 	//width: 780px;
-  //}
+	//}
 }
 
 @mixin grid-6 {
-  width:940px;
-  @media (min-width: 1200px) {
-	width: 580px;
-  }
-  @media (min-width: 1440px) {
-	width: 700px;
-  }
-  @media (min-width: 1620px) {
-	width: 790px;
-  }
-  //@media (min-width: 1920px) {
+	width: 940px;
+	@media (min-width: 1200px) {
+		width: 580px;
+	}
+	@media (min-width: 1440px) {
+		width: 580px;
+	}
+	@media (min-width: 1620px) {
+		width: 688px;
+	}
+	//@media (min-width: 1920px) {
 	//width: 940px;
-  //}
+	//}
 }
 
 @mixin grid-7 {
-  width:1100px;
-  @media (min-width: 1200px) {
-	width: 680px;
-  }
-  @media (min-width: 1440px) {
-	width: 820px;
-  }
-  @media (min-width: 1620px) {
-	width: 925px;
-  }
-  //@media (min-width: 1920px) {
+	width: 1100px;
+	@media (min-width: 1200px) {
+		width: 680px;
+	}
+	@media (min-width: 1440px) {
+		width: 680px;
+	}
+	@media (min-width: 1620px) {
+		width: 806px;
+	}
+	//@media (min-width: 1920px) {
 	//width: 1100px;
-  //}
+	//}
 }
 
 @mixin grid-8 {
-  width:1260px;
-  @media (min-width: 1200px) {
-	width: 780px;
-  }
-  @media (min-width: 1440px) {
-	width: 940px;
-  }
-  @media (min-width: 1620px) {
-	width: 1060px;
-  }
-  //@media (min-width: 1920px) {
+	width: 1260px;
+	@media (min-width: 1200px) {
+		width: 780px;
+	}
+	@media (min-width: 1440px) {
+		width: 780px;
+	}
+	@media (min-width: 1620px) {
+		width: 924px;
+	}
+	//@media (min-width: 1920px) {
 	//width: 1260px;
-  //}
+	//}
 }
 
 @mixin grid-9 {
-  width:1420px;
-  @media (min-width: 1200px) {
-	width: 880px;
-  }
-  @media (min-width: 1440px) {
-	width: 1060px;
-  }
-  @media (min-width: 1620px) {
-	width: 1195px;
-  }
-  //@media (min-width: 1920px) {
+	width: 1420px;
+	@media (min-width: 1200px) {
+		width: 880px;
+	}
+	@media (min-width: 1440px) {
+		width: 880px;
+	}
+	@media (min-width: 1620px) {
+		width: 1042px;
+	}
+	//@media (min-width: 1920px) {
 	//width: 1420px;
-  //}
+	//}
 }
 
 @mixin grid-10 {
-  width:1580px;
-  @media (min-width: 1200px) {
-	width: 980px;
-  }
-  @media (min-width: 1440px) {
-	width: 1180px;
-  }
-  @media (min-width: 1620px) {
-	width: 1330px;
-  }
-  //@media (min-width: 1920px) {
+	width: 1580px;
+	@media (min-width: 1200px) {
+		width: 980px;
+	}
+	@media (min-width: 1440px) {
+		width: 980px;
+	}
+	@media (min-width: 1620px) {
+		width: 1160px;
+	}
+	//@media (min-width: 1920px) {
 	//width: 1580px;
-  //}
+	//}
 }
 
 @mixin grid-11 {
-  width:1740px;
-  @media (min-width: 1200px) {
-	width: 1080px;
-  }
-  @media (min-width: 1440px) {
-	width: 1300px;
-  }
-  @media (min-width: 1620px) {
-	width: 1465px;
-  }
-  //@media (min-width: 1920px) {
+	width: 1740px;
+	@media (min-width: 1200px) {
+		width: 1080px;
+	}
+	@media (min-width: 1440px) {
+		width: 1080px;
+	}
+	@media (min-width: 1620px) {
+		width: 1278px;
+	}
+	//@media (min-width: 1920px) {
 	//width: 1740px;
-  //}
+	//}
 }
 
 @mixin grid-12 {
-  width:1900px;
-  @media (min-width: 1200px) {
-	width: 1180px;
-  }
-  @media (min-width: 1440px) {
-	width: 1420px;
-  }
-  @media (min-width: 1620px) {
-	width: 1600px;
-  }
-  //@media (min-width: 1920px) {
+	width: 1900px;
+	@media (min-width: 1200px) {
+		width: 1180px;
+	}
+	@media (min-width: 1440px) {
+		width: 1180px;
+	}
+	@media (min-width: 1620px) {
+		width: 1396px;
+	}
+	//@media (min-width: 1920px) {
 	//width: 1900px;
-  //}
+	//}
 }

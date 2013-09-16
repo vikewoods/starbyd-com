@@ -1,0 +1,22 @@
+{
+  "name": "starbyd.com",
+  "version": "1.0.0",
+  "homepage": "https://github.com/vikewoods/starbyd-com",
+  "authors": [
+    "Vik Ewoods <support@voroninstudio.eu>"
+  ],
+  "description": "Starbyd HTML Web Application",
+  "main": "index.html",
+  "keywords": [
+    "starbyd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

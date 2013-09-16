@@ -4,61 +4,69 @@
 
 $(document).ready(function(){
 
-	// init menu 
-	(function($){
 	var $li = $("#catalog-menu");
 	var $menu = $("#catalog-sub-menu");
+	var $a = $("#catalog-menu a");
 
-	/*$li.hover(
-		function(){
-			$menu.fadeIn('slow', function() {
-				$li.addClass('active-li');
-			});
-		}
-	);*/
+	$li.click(function(){
+		$menu.fadeToggle('slow', function(){
+			$li.toggleClass('active-li');
+		});
 
-
-
-	full_out = false;
-	displayed = false;
-	$li.mouseenter(function(){
-		full_out = false;
-		if (!displayed) {
-			$menu.fadeIn('slow',function(){displayed = true;$li.addClass('active-li');});
-		}
-	});
-	$li.mouseleave(function(){
-		/*$menu.delay(300);
-		$li.removeClass('active-li');
-		returned = false;*/
-
-		setTimeout(function(){
-			if(full_out){
-				$menu.fadeOut('fast', function(){displayed = false;});
-				$li.removeClass('active-li');
-			}
-		},150);
-		full_out = true;
-
+		console.log('Clicked on li element');
 	});
 
-		$menu.mouseleave(function(){
-
-		setTimeout(function(){
-			if(full_out){
-				$menu.fadeOut('fast',function(){displayed = false;$li.removeClass('active-li');});
-			}
-		},150);
-		full_out = true;
+	$a.click(function(event){
+		event.preventDefault();
+		console.log('Clicked on a element');
 	});
 
-		$menu.mouseenter(function(){
-			full_out = false;
-		if (!displayed) {
-			$menu.fadeIn('slow',function(){displayed = true;$li.addClass('active-li');});
-		}
-	});
-	})(jQuery);
+	// init menu 
+//	(function($){
+//	var $li = $("#catalog-menu");
+//	var $menu = $("#catalog-sub-menu");
+//
+//
+//	full_out = false;
+//	displayed = false;
+//	$li.mouseenter(function(){
+//		full_out = false;
+//		if (!displayed) {
+//			$menu.fadeIn('slow',function(){displayed = true;$li.addClass('active-li');});
+//		}
+//	});
+//	$li.mouseleave(function(){
+//		/*$menu.delay(300);
+//		$li.removeClass('active-li');
+//		returned = false;*/
+//
+//		setTimeout(function(){
+//			if(full_out){
+//				$menu.fadeOut('fast', function(){displayed = false;});
+//				$li.removeClass('active-li');
+//			}
+//		},150);
+//		full_out = true;
+//
+//	});
+//
+//		$menu.mouseleave(function(){
+//
+//		setTimeout(function(){
+//			if(full_out){
+//				$menu.fadeOut('fast',function(){displayed = false;$li.removeClass('active-li');});
+//			}
+//		},150);
+//		full_out = true;
+//	});
+//
+//		$menu.mouseenter(function(){
+//			full_out = false;
+//		if (!displayed) {
+//			$menu.fadeIn('slow',function(){displayed = true;$li.addClass('active-li');});
+//		}
+//	});
+//	})(jQuery);
 
 
 	/*
@@ -99,5 +107,9 @@ $(document).ready(function(){
 
 	// Kick off one resize to fix all videos on page load
 	}).resize();
+
+	/*
+	Initializ Hammer JS for mobile devices
+	 */
 
 });
