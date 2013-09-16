@@ -1,6 +1,7 @@
 // Banner section
 #banner-wrapper{
 	@extend .clearfix;
+	top: -45px;
 	width: 100%;
 	position: relative;
 	z-index: -10;

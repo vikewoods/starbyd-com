@@ -721,13 +721,11 @@ body{
 			}
 			form{
 				float: left;
-
-				margin-top: -10px;
 				input{
 					float: left;
 
 					width: 310px;
-					height: 63px;
+					height: 46px;
 					padding: 0 0.5em;
 
 					background-color: rgba(255,255,255,.29);
@@ -746,18 +744,18 @@ body{
 						display: inline-block;
 						float: right;
 
-						width: 70px;
-						height: 70px;
-						margin-top: -1px;
-						margin-left: -3px;
+						width: 50px;
+						height: 50px;
+						margin-top: 0px;
+						margin-left: 1px;
 
 						vertical-align: middle;
 
 						background-image: url("../images/input-middle.png");
 						background-repeat: no-repeat;
-						background-position: -123px -34px;
+						background-position: 0px 0px;
 
-						line-height: 70px;
+						line-height: 50px;
 				}
 			}
 		}
@@ -772,7 +770,7 @@ body{
   right: 0;
   left: 0;
   height: 120px;
-  margin: -60px auto 0 auto;
+  margin: -90px auto 0 auto;
 
   border-right: 1px solid rgba(255, 255, 255, 0.15);
   border-bottom: 1px solid #b2b2b2;
@@ -856,7 +854,7 @@ body{
   @include container;
   //TODO: Temp layout for testing purpose
   position: relative;
-  top: -60px;
+  top: -90px;
 
   background-color: #ffffff;
   -webkit-box-shadow: 1px -1px 0px 4px rgba(0,0,0,0.2);
