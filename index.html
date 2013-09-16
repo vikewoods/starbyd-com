@@ -5,7 +5,36 @@
 	<title>Страбуд - Главная страница</title>
 	<script src="bower_components/headjs/dist/head.js"></script>
 	<script>
-		head.js("bower_components/jquery/jquery.min.js", "bower_components/jquery/jquery-migrate.min.js", "custom_sources/ParallaxContentSlider/js/modernizr.custom.28468.js", "bower_components/hammerjs/dist/jquery.hammer.min.js", "assets/js/detectmobilebrowser.js", "assets/js/applications.js", function(){
+		head.js("bower_components/jquery/jquery.min.js", "bower_components/jquery/jquery-migrate.min.js", "custom_sources/ParallaxContentSlider/js/modernizr.custom.28468.js", "bower_components/hammerjs/dist/jquery.hammer.min.js", "assets/js/detectmobilebrowser.js", "bower_components/jquery.transit/jquery.transit.js", "assets/js/applications.js", function(){
+
+			/*
+			Banner animation (beta build)
+			 */
+			console.log('Make sure DOM Loaded completly!');
+			function AnimatedBanner(){
+				// First Animate text block
+				$(".bw-descr-block").transition({ x: 1850, y: 0 }, 1200, 'easeOutQuint');
+			}
+
+			function AnimateDoor1(){
+				$(".banner-element-1").transition({ x: 1300, y: 0 }, 800, 'easeOutQuint');
+			}
+			function AnimateDoor2(){
+				$(".banner-element-2").transition({ x: 1340, y: 0 }, 900, 'easeOutExpo');
+			}
+			function AnimatedLink(){
+				$('.banner-read-more').transition({
+					perspective: '100px',
+					rotate3d: '1,1,0,360deg'
+				});
+			}
+
+			$(window).load(function() {
+				setTimeout(AnimatedBanner, 800);
+				setTimeout(AnimateDoor1, 1400);
+				setTimeout(AnimateDoor2, 1700);
+				setTimeout(AnimatedLink, 2200);
+			});
 
 		});
 	</script>
@@ -128,7 +157,18 @@
 		</div><!-- header -->
 		<!-- banner section go up -->
 		<div id="banner-wrapper">
-
+			<div class="banner-element-1">
+				<img src="assets/images/banners/doors_element_1.png" alt=""/>
+			</div>
+			<div class="banner-element-2">
+				<img src="assets/images/banners/doors_element_2.png" alt=""/>
+			</div>
+			<div class="bw-descr-block">
+				<h2>Натуральна вільха</h2>
+				<p class="bigger">-20%</p>
+				<p>Акційни розпродаж екологічних дверей.	З 31.07.13 по 24.08.13 діє акція в салоні.</p>
+				<a class="banner-read-more" href="#"></a>
+			</div>
 			<div class="prev"></div>
 			<div class="next"></div>
 		</div>
