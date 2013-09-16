@@ -19,7 +19,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/assets\/scss\/init.scss",
-      "outputStyle" : 3,
+      "outputStyle" : 1,
       "shouldRunBless" : 1,
       "outputAbbreviatedPath" : "\/assets\/scss\/init.css",
       "fileType" : 4,
@@ -198,6 +198,17 @@
       "initialSize" : 467672,
       "fileType" : 8192
     },
+    "\/assets\/images\/input-middle.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/images\/input-middle.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/images\/input-middle.png",
+      "initialSize" : 2964,
+      "fileType" : 8192
+    },
     "\/assets\/scss\/normalize.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -230,17 +241,6 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/assets\/images\/sponsors\/sp-3.png",
       "initialSize" : 7533,
-      "fileType" : 8192
-    },
-    "\/assets\/images\/input-middle.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/images\/input-middle.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/images\/input-middle.png",
-      "initialSize" : 2964,
       "fileType" : 8192
     },
     "\/assets\/images\/bg.jpg" : {
@@ -286,15 +286,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/assets\/images\/banners\/banner-control-sprite.png" : {
+    "\/assets\/images\/menu-catalog-arrow.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/images\/banners\/banner-control-sprite.png",
+      "inputAbbreviatedPath" : "\/assets\/images\/menu-catalog-arrow.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/images\/banners\/banner-control-sprite.png",
-      "initialSize" : 3739,
+      "outputAbbreviatedPath" : "\/assets\/images\/menu-catalog-arrow.png",
+      "initialSize" : 1194,
       "fileType" : 8192
     },
     "\/assets\/images\/news\/news-2.jpg" : {
@@ -308,15 +308,15 @@
       "initialSize" : 21289,
       "fileType" : 4096
     },
-    "\/assets\/images\/menu-catalog-arrow.png" : {
+    "\/assets\/images\/banners\/banner-control-sprite.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/images\/menu-catalog-arrow.png",
+      "inputAbbreviatedPath" : "\/assets\/images\/banners\/banner-control-sprite.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/images\/menu-catalog-arrow.png",
-      "initialSize" : 1194,
+      "outputAbbreviatedPath" : "\/assets\/images\/banners\/banner-control-sprite.png",
+      "initialSize" : 3739,
       "fileType" : 8192
     },
     "\/assets\/scss\/banner-parallax.scss" : {
