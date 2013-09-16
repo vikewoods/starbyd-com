@@ -286,6 +286,17 @@
       "initialSize" : 21289,
       "fileType" : 4096
     },
+    "\/assets\/images\/menu-catalog-arrow.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/images\/menu-catalog-arrow.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/images\/menu-catalog-arrow.png",
+      "initialSize" : 1194,
+      "fileType" : 8192
+    },
     "\/assets\/scss\/banner-parallax.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
