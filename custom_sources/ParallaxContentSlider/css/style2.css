@@ -1,14 +1,12 @@
 .da-slider{
 	width: 100%;
 	min-width: 520px;
-	height: 400px;
+	height: 620px;
 	position: relative;
 	margin: 30px auto;
 	overflow: hidden;
-	background: transparent url(../images/waves.gif) repeat 0% 0%;
-	border-top: 8px solid #efc34a;
-	border-bottom: 8px solid #efc34a;
-	box-shadow: 0px 1px 1px rgba(0,0,0,0.2), 0px -2px 1px #fff;
+	border-top: 6px solid rgba(0, 0, 0, 0.35);
+	border-bottom: 6px solid rgba(0, 0, 0, 0.35);
 	-webkit-transition: background-position 1s ease-out 0.3s;
 	-moz-transition: background-position 1s ease-out 0.3s;
 	-o-transition: background-position 1s ease-out 0.3s;
