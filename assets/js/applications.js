@@ -4,62 +4,69 @@
 
 $(document).ready(function(){
 
-	/*
-	Parallax banner
-	 */
-	$('#da-slider').cslider({
-		current     : 0,
-		bgincrement : 50,
-		autoplay    : false,
-		interval    : 4000
+	var $li = $("#catalog-menu");
+	var $menu = $("#catalog-sub-menu");
+	var $a = $("#catalog-menu a");
+
+	$li.click(function(){
+		$menu.fadeToggle('slow', function(){
+			$li.toggleClass('active-li');
+		});
+
+		console.log('Clicked on li element');
+	});
+
+	$a.click(function(event){
+		event.preventDefault();
+		console.log('Clicked on a element');
 	});
 
 	// init menu 
-	(function($){
-	var $li = $("#catalog-menu");
-	var $menu = $("#catalog-sub-menu");
-
-
-	full_out = false;
-	displayed = false;
-	$li.mouseenter(function(){
-		full_out = false;
-		if (!displayed) {
-			$menu.fadeIn('slow',function(){displayed = true;$li.addClass('active-li');});
-		}
-	});
-	$li.mouseleave(function(){
-		/*$menu.delay(300);
-		$li.removeClass('active-li');
-		returned = false;*/
-
-		setTimeout(function(){
-			if(full_out){
-				$menu.fadeOut('fast', function(){displayed = false;});
-				$li.removeClass('active-li');
-			}
-		},150);
-		full_out = true;
-
-	});
-
-		$menu.mouseleave(function(){
-
-		setTimeout(function(){
-			if(full_out){
-				$menu.fadeOut('fast',function(){displayed = false;$li.removeClass('active-li');});
-			}
-		},150);
-		full_out = true;
-	});
-
-		$menu.mouseenter(function(){
-			full_out = false;
-		if (!displayed) {
-			$menu.fadeIn('slow',function(){displayed = true;$li.addClass('active-li');});
-		}
-	});
-	})(jQuery);
+//	(function($){
+//	var $li = $("#catalog-menu");
+//	var $menu = $("#catalog-sub-menu");
+//
+//
+//	full_out = false;
+//	displayed = false;
+//	$li.mouseenter(function(){
+//		full_out = false;
+//		if (!displayed) {
+//			$menu.fadeIn('slow',function(){displayed = true;$li.addClass('active-li');});
+//		}
+//	});
+//	$li.mouseleave(function(){
+//		/*$menu.delay(300);
+//		$li.removeClass('active-li');
+//		returned = false;*/
+//
+//		setTimeout(function(){
+//			if(full_out){
+//				$menu.fadeOut('fast', function(){displayed = false;});
+//				$li.removeClass('active-li');
+//			}
+//		},150);
+//		full_out = true;
+//
+//	});
+//
+//		$menu.mouseleave(function(){
+//
+//		setTimeout(function(){
+//			if(full_out){
+//				$menu.fadeOut('fast',function(){displayed = false;$li.removeClass('active-li');});
+//			}
+//		},150);
+//		full_out = true;
+//	});
+//
+//		$menu.mouseenter(function(){
+//			full_out = false;
+//		if (!displayed) {
+//			$menu.fadeIn('slow',function(){displayed = true;$li.addClass('active-li');});
+//		}
+//	});
+//	})(jQuery);
 
 
 	/*

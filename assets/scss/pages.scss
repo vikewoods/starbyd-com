@@ -11,11 +11,11 @@ body{
 #wrapper{
   #header{
 	position: relative;
-	top: 20px;
+	top: -5px;
 	.first-section{
 		@include container;
 	  	@extend .clearfix;
-			margin-bottom: 0.55em;
+			margin-bottom: 0;
 	  	.space{
 		  	@include grid-item;
 		  	@include grid-3;
@@ -37,10 +37,13 @@ body{
 		  	height: 50px;
 		  	line-height: 25px;
 		  p{
-			color: #e1e1e2;
-			font-weight: 300;
-			font-size: 1em;
-			letter-spacing: -1px;
+				font-size: 0.95em;
+				line-height: 16px;
+				margin-top: 12px;
+
+				color: #e0e0e0;
+				font-weight: 400;
+				letter-spacing: -1px;
 		  }
 		}
 
@@ -65,6 +68,7 @@ body{
 		.intro-box-3{
 		  @include grid-item;
 		  @include grid-4;
+			float: right;
 		  height: 50px;
 		  line-height: 50px;
 			@media (min-width: 1200px) {
@@ -83,7 +87,8 @@ body{
 		  }
 			.social{
 				display: inline-block;
-				width: 45px;
+				cursor: pointer;
+				width: 40px;
 				height: 22px;
 				line-height: 22px;
 				vertical-align: text-top;
@@ -118,10 +123,12 @@ body{
 				background-image: url("../images/icons-sprites.png");
 				background-repeat: no-repeat;
 
-				margin-right: 10px;
+				margin-left: 55px;
+				margin-right: 0px;
 				background-position: -190px -204px;
 			}
 			.eng{
+				cursor: pointer;
 				display: inline-block;
 				width: 45px;
 				height: 22px;
@@ -156,8 +163,11 @@ body{
 				@include alpha;
 				position: relative;
 				vertical-align: middle;
-				text-align: center;
+				text-align: left;
 				top: -50%;
+				a{
+					margin-left: 20px;
+				}
 			}
 
 	  	nav{
@@ -182,26 +192,30 @@ body{
 			li{
 				float: left;
 			  margin: 0 0em;
-			  padding: 0 3.25em;
+			  /*
+				padding: 0 3.25em;
 				@media (min-width: 1200px) {
 					padding: 0 2.5em;
 				}
 				@media (min-width: 1440px) {
 					padding: 0 2.65em;
 				}
+				*/
 			  background: url('../images/top-menu-sep.png') no-repeat left;
 			  font-size: 1.2em;
 			  font-weight: 400;
 			  height: 75px;
 			  line-height: 75px;
 			  cursor: pointer;
-
+				text-align: center;
+				width: 205px;
 			  a{
 					color: #004b8c;
 					text-decoration: none;
 					@include animated-links;
 					&:hover{
 				  	color: #fff !important;
+						text-shadow: 0 1px 0 rgba(0,1,1,.3);
 					}
 			  }
 
@@ -218,6 +232,7 @@ body{
 					line-height: 74px;
 					a{
 				  	color: #fff !important;
+						text-shadow: 0 1px 0 rgba(0,1,1,.3);
 					}
 			  }
 
@@ -239,7 +254,8 @@ body{
 			  border-bottom: 1px solid #003162;
 			  line-height: 74px;
 			  a{
-				color: #fff !important;
+					color: #fff !important;
+					text-shadow: 0 1px 0 rgba(0,1,1,.3);
 			  }
 			}
 		  }
@@ -250,7 +266,7 @@ body{
 		  width: 960px;
 		  height: 520px;
 		  top: 75px;
-		  left: 10%;
+		  left: 4%;
 		  margin: 0 auto;
 		  background: rgba(0,0,0,0.68);
 		  border-left: 4px solid #004f96;
@@ -272,6 +288,7 @@ body{
 		  }
 		  ul{
 			letter-spacing: -1px;
+				cursor: pointer;
 			i{
 			  @include icon-sprite;
 			}
@@ -352,12 +369,12 @@ body{
 	  margin-bottom: 3em;
 	  .ffl-left{
 		@include grid-item;
-		@include grid-5;
+		@include grid-6;
 		@include alpha;
 		p{
 		  color: #d3dce3;
 		  font-weight: 400;
-		  font-size: 1em;
+		  font-size: 0.9em;
 		  a{
 			text-decoration: none;
 			color: #d3dce3;
@@ -372,7 +389,7 @@ body{
 
 	  .ffl-right{
 		@include grid-item;
-		@include grid-7;
+		@include grid-6;
 		@include omega;
 		nav{
 		  float: left;
@@ -429,7 +446,7 @@ body{
 	  margin-bottom: 1em;
 	  .fsl-left{
 		@include grid-item;
-		@include grid-5;
+		@include grid-6;
 		@include alpha;
 		.blogo{
 		  float: left;
@@ -440,7 +457,7 @@ body{
 		p{
 		  color: #d3dce3;
 		  font-weight: 300;
-		  font-size: 1em;
+		  font-size: 0.9em;
 		  a{
 			text-decoration: none;
 			color: #d3dce3;
@@ -455,11 +472,11 @@ body{
 
 	  .fsl-center{
 		@include grid-item;
-		@include grid-5;
+		@include grid-4;
 		p{
 		  color: #d3dce3;
 		  font-weight: 300;
-		  font-size: 1em;
+		  font-size: 0.9em;
 		  b{
 			font-size: 130% !important;
 			font-weight: 400 !important;
@@ -623,6 +640,11 @@ body{
 					font-style: italic;
 					font-size: 1.15em;
 					padding: 0 0.5em;
+
+					background-color: rgba(255,255,255,.29);
+					-moz-box-shadow: inset 3px 4px 0 rgba(0,1,1,.15);
+					-webkit-box-shadow: inset 3px 4px 0 rgba(0,1,1,.15);
+					box-shadow: inset 3px 4px 0 rgba(0,1,1,.15);
 				}
 				label{
 					display: none;
@@ -804,7 +826,7 @@ body{
 		margin-top: 20px;
 		margin-left: 70px;
 		li{
-		  margin-bottom: 0.25em;
+		  margin-bottom: 0.35em;
 		  a{
 			text-decoration: none;
 			font-size: 1em;
@@ -896,6 +918,8 @@ body{
 			background-repeat: no-repeat;
 
 			float: right;
+			position: relative;
+			left: 25px;
 		}
   }
 }
@@ -916,13 +940,13 @@ body{
 		margin-top: 120px;
 		h2{
 			@include small-headers;
-			font-size: 2.2em;
-			line-height: 2.2em;
+			font-size: 2em;
+			line-height: 65px;
 			letter-spacing: -1px;
 			color: #005baa;
 			font-weight: 400;
 
-			height: 80px;
+			height: 65px;
 			width: 90%;
 			padding-left: 40px;
 			position: relative;
@@ -932,7 +956,7 @@ body{
 			}
 		}
 		.news-holder{
-			padding: 1em 0 2.5em 0;
+			padding: 2.5em 0 2.5em 0;
 			height: 255px;
 			.avatar{
 				width: 27%;
@@ -979,13 +1003,13 @@ body{
 		margin-top: 120px;
 		h2{
 			@include small-headers;
-			font-size: 2.2em;
-			line-height: 2.2em;
+			font-size: 2em;
+			line-height: 65px;
 			letter-spacing: -1px;
 			color: #005baa;
 			font-weight: 400;
 
-			height: 80px;
+			height: 65px;
 			width: 90%;
 			padding-left: 40px;
 			position: relative;
@@ -996,7 +1020,7 @@ body{
 			}
 		}
 		.video-big{
-			padding: 1em 0;
+			padding: 2.5em 0 1em 0;
 			padding-left: 90px;
 			width: 90%;
 			height: 100%;
@@ -1100,13 +1124,13 @@ body{
 
 	h2{
 		@include small-headers;
-		font-size: 2.2em;
-		line-height: 2.2em;
+		font-size: 2em;
+		line-height: 65px;
 		letter-spacing: -1px;
 		color: #005baa;
 		font-weight: 400;
 
-		height: 80px;
+		height: 65px;
 		width: 45%;
 		padding-left: 40px;
 		position: relative;
@@ -1126,7 +1150,7 @@ body{
 	}
 
 	.articles-holder{
-		padding: 1em 0 2.5em 0;
+		padding: 2.5em 0 2.5em 0;
 		height: 255px;
 		@include grid-item;
 		@include grid-6;
@@ -1134,7 +1158,7 @@ body{
 			width: 27%;
 			margin-right: 3%;
 			float: left;
-			padding-left: 15px;
+			padding-left: 6px;
 			img{
 				max-width: 100%;
 				width: 100%;
