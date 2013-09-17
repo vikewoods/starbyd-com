@@ -1,0 +1,15 @@
+{
+  "name": "mobifyjs",
+  "homepage": "https://github.com/mobify/mobifyjs",
+  "version": "2.0.0",
+  "_release": "2.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.0.0",
+    "commit": "eaf211865770d18e0c7725fc73dd1f3086536390"
+  },
+  "_source": "git://github.com/mobify/mobifyjs.git",
+  "_target": "~2.0.0",
+  "_originalSource": "mobifyjs",
+  "_direct": true
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<script>
+(function(window, document, detector, mobifyjsUrl, mainUrl) {
+
+// if mobify=(1|0) override is set in hash or cookie, force mobify on/off.
+var override = /((; )|#|&|^)mobify=(\d)/.exec(location.hash + '; ' + document.cookie);
+if (override && override[1]) {
+    // if mobify=0, do not run mobify.
+    if (!+override[1]) return;
+}
+// else do not run mobify if Mobify object exists, or detector fails.
+else if (this.Mobify || !detector()) {
+    return;
+}
+
+// Start Mobify object with initial timestamp when loaded.
+// Uncomment when needed for performance testing.
+window.Mobify = {points: [+new Date]};
+
+function attachScriptBeforeMobifyTag(script, src, id, classNames) {
+    var mobifyTagScript = document.getElementsByTagName('script')[0];
+
+    script.src = src;
+    script.id = id;
+    script.setAttribute("class", classNames);
+    mobifyTagScript.parentNode.insertBefore(script, mobifyTagScript);
+}
+
+document.write('<plaintext style="display:none">');
+
+// On next tick, load library and main executable
+setTimeout(function() {
+    var Mobify = window.Mobify = window.Mobify || {};
+    Mobify.capturing = true;
+    var mobifyjsScript = document.createElement('script');
+    var errorHandler = function() {
+        var now = new Date();
+        // Set now to 30 minutes ahead
+        now.setTime(now.getTime() + 1800000);
+        document.cookie = 'mobify=0' +
+                '; expires=' + now.toGMTString() +
+                '; path=/';
+        // Reload the page (location.reload has problems in FF)
+        window.location = window.location.href;
+    };
+    mobifyjsScript.onload = function(){
+        if (mainUrl) {
+            var mainScript = document.createElement('script');
+            mainScript.onerror = errorHandler;
+            attachScriptBeforeMobifyTag(mainScript, mainUrl, "mobify-js-main", "mobify");
+        }
+    };
+    mobifyjsScript.onerror = errorHandler;
+    attachScriptBeforeMobifyTag(mobifyjsScript, mobifyjsUrl, "mobify-js", "mobify");
+
+});
+
+})( window, document,
+    // detector function
+    function (){
+        // We're enabled for:
+        // - WebKit based browsers
+        // - IE 10
+        // - FireFox 4+
+        // - Opera 11+
+        // - 3DS
+        match = /webkit|msie\s10|(firefox)[\/\s](\d+)|(opera)[\s\S]*version[\/\s](\d+)|3ds/i.exec(navigator.userAgent);
+     
+        if (!match) {
+            return false;
+        }
+     
+        // match[1] == Firefox
+        if (match[1] && +match[2] < 4) {
+            return false;
+        }
+        // match[3] == Opera
+        if (match[3] && +match[4] < 11) {
+            return false;
+        }
+
+        return true;
+    },
+
+    // path to mobify.js
+    '/mobifyjs/build/mobify.min.js',
+
+    // path to main executable 
+    '/mobifyjs/examples/capturing-basictemplating/main.js'
+);
+</script>
+<!-- END MOBIFY TAG -->
+<link rel="stylesheet" href="/mobifyjs/examples/assets/css/stylesheet.css" type="text/css">
+<title>Mobify.js image gallary example</title>
+</head>
+<body class="foo">
+<div class="header"></div>
+<div class="example">
+
+<p>Just for funzies, I will talk about some of the cool tools we use at Mobify.</p>
+
+<p><a href="http://twitter.github.com/bootstrap/">Bootstrap</a> has been a very useful
+tool for rapidly building prototypes for our projects.</p>
+
+<p> <a href="http://www.sublimetext.com/">Sublime</a>
+is also the default text editor commonly used by our team, except for Ryan! I love the vim integration, personally.</p>
+
+<p><a href="http://mizage.com/divvy/">Divvy</a> is a fantastic product that we use for window management - 
+we all use Macbook Airs and Pros (you'll get a free one if you come work for us!).</p> 
+
+<p><a href="http://progrium.com/localtunnel/">Localtunner</a> is a great little tool that allows you to 
+expose code running on localhost trapped by your NAT to the world!</p>
+
+<p>We use an amazingly fantastic tool for HTTP debugging called <a href="http://www.charlesproxy.com/">Charles</a>.</p>
+
+<p>Annnnd I'm done. You can actually find this full list at our 
+<a href="http://www.mobify.com/blog/top-11-mobile-development-tools-used-at-mobify/">blog</a> :) 
+</p>
+</div>
+<script>
+// Grab the total time since starting capturing and send it
+// to the parent for testing in performance.html
+var end = +new Date;
+var begin;
+if (window.Mobify.points) {
+    begin = window.Mobify.points[0];
+} else {
+    var pointEl = document.getElementById("mobify-point");
+    begin = pointEl.innerText || pointEl.textContent;
+}
+var diff = end - begin;
+parent.postMessage(diff, "*");
+</script>
+</body>
+</html>
